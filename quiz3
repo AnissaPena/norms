@@ -1,0 +1,55 @@
+def dot(vector01,vector02):
+
+if len(vector01) != len(vector02):
+
+print('wrong dimensions')
+
+total = 0
+
+for i in range(len(vector01)):
+
+total += vector01[i] * vector02[i]
+
+return total
+
+
+
+def vecSubtract(vector01,vector02):
+
+if len(vector01) != len(vector02):
+
+print('wrong dimensions')
+
+result = []
+
+for i in range(len(vector01)):
+
+total = vector01[i] - vector02[i]
+
+result.append(total)
+
+return result
+
+def scalarVecMulti(scalar,vector):
+
+result = []
+
+for i in vector:
+
+result.append(i * scalar)
+
+return result
+
+def infNorm(vector):
+
+norm = abs(vector[0])
+
+for i in vector:
+
+if abs(i) > norm:
+
+norm = abs(i)
+
+return norm
+
+
