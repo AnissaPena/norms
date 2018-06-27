@@ -1,8 +1,10 @@
 def dot(vector01,vector02):
-
+"""
+This determines if the two vectors dimensions are compatiable and if they are compatiable it will calculate the dot product of the two vectors.It checks to see that both have the same number of elements in each list pertaining to each vector.
+"""
 if len(vector01) != len(vector02):
 
-print('wrong dimensions')
+print('invalid dimensions')
 
 total = 0
 
@@ -11,6 +13,12 @@ for i in range(len(vector01)):
 total += vector01[i] * vector02[i]
 
 return total
+
+#Invalid example, invalid vectors
+invalid01= [1, 2]
+invalid02= [3]
+
+print(
 
 
 
@@ -22,13 +30,7 @@ print('wrong dimensions')
 
 result = []
 
-for i in range(len(vector01)):
 
-total = vector01[i] - vector02[i]
-
-result.append(total)
-
-return result
 
 def scalarVecMulti(scalar,vector):
 
@@ -39,6 +41,16 @@ for i in vector:
 result.append(i * scalar)
 
 return result
+
+
+for i in range(len(vector01)):
+
+total = vector01[i] - vector02[i]
+
+result.append(total)
+
+return result
+
 
 def infNorm(vector):
 
